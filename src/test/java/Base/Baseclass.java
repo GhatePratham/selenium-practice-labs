@@ -5,6 +5,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.prathmesh.selenium.base.Driverfactory;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Baseclass {
@@ -14,11 +16,8 @@ public class Baseclass {
 	@BeforeMethod
 	
 	public void setup() {
-		// Setup ChromeDriver using WebDriverManager
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		// Maximize the browser window
-		driver.manage().window().maximize();
+		Driverfactory.initDriver();
+		driver = Driverfactory.getDriver();
 		driver.get("https://www.saucedemo.com/");
 	}
 	
@@ -26,8 +25,6 @@ public class Baseclass {
 	public void teardown() {
 		
 		//close browser
-		if(driver != null) {
-			driver.quit();
-		}
+		Driverfactory.quitDriver();
 }
 }
