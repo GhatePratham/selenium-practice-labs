@@ -6,6 +6,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.prathmesh.selenium.base.Driverfactory;
+import com.prathmesh.selenium.utils.configreader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -18,9 +19,11 @@ public class Baseclass {
 	public void setup() {
 		Driverfactory.initDriver();
 		driver = Driverfactory.getDriver();
-		driver.get("https://www.saucedemo.com/");
-	}
+		configreader.loadproperties();
+		
+		driver.get(configreader.getproperties("baseUrl"));
 	
+	}
 	@AfterMethod
 	public void teardown() {
 		
