@@ -5,8 +5,10 @@
     <classes>
       <class name="prathmesh.LoginTest">
         <methods>
+          <include name="setupReports"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="tearDownReport"/>
           <include name="Loginintoapplication"/>
         </methods>
       </class> <!-- prathmesh.LoginTest -->

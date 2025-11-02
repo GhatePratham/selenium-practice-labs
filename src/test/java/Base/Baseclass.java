@@ -15,6 +15,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.prathmesh.selenium.base.Driverfactory;
 import com.prathmesh.selenium.reports.Extentmanager;
+import com.prathmesh.selenium.utils.ScreenshotUtils;
 import com.prathmesh.selenium.utils.configreader;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -48,7 +49,9 @@ public class Baseclass {
 		
 		 //  Log test result in Extent Report
 		if(result.getStatus()==ITestResult.FAILURE) {
+			String screenshotPath = ScreenshotUtils.capturescreenshot(driver, result.getName());
 			test.log(Status.FAIL, "Test FAILED: " + result.getThrowable());
+			test.addScreenCaptureFromPath(screenshotPath); // attach screenshot in report
 		}
 		else if (result.getStatus() == ITestResult.SUCCESS) {
 			test.log(Status.PASS, "Test PASSED");
@@ -59,6 +62,7 @@ public class Baseclass {
 		
 		//close browser
 		Driverfactory.quitDriver();
+		 test.log(Status.INFO, "Browser closed");
 }
 	@AfterSuite
 	public void tearDownReport() {
