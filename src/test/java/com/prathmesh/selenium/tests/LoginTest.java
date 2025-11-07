@@ -1,12 +1,11 @@
-package prathmesh;
+package com.prathmesh.selenium.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import com.prathmesh.selenium.base.Baseclass;
 import com.prathmesh.selenium.pages.Loginpage;
 import com.prathmesh.selenium.utils.configreader;
-
-import Base.Baseclass;
 
 public class LoginTest extends Baseclass {
 

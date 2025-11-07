@@ -3,7 +3,8 @@
 <suite name="Selenium Practice Suite">
   <test thread-count="5" name="Login Test">
     <classes>
-      <class name="prathmesh.LoginTest"/>
+      <class name="com.prathmesh.selenium.tests.LoginTest"/>
+
     </classes>
   </test> <!-- Launch Test -->
 </suite> <!-- Selenium Practice Suite -->

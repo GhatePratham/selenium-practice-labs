@@ -1,4 +1,4 @@
-package Base;
+package com.prathmesh.selenium.base;
 
 import java.lang.reflect.Method;
 
