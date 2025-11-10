@@ -24,7 +24,8 @@ public class LoginTest extends Baseclass {
 		// Expected title
         String expTitle = "Swag Labs";
 		
-	   Assert.assertEquals(actTitle, expTitle ,"Title verification failed!");                                                                                                    
+	   Assert.assertEquals(actTitle, expTitle ,"Title verification failed!");    
+	   //test
 		
 	}
 }
