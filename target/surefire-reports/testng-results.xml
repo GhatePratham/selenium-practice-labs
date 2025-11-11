@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-10T11:43:36 IST" name="Selenium Practice Suite" finished-at="2025-11-10T11:43:39 IST" duration-ms="2828">
+  <suite started-at="2025-11-11T11:47:35 IST" name="Selenium Practice Suite" finished-at="2025-11-11T11:47:38 IST" duration-ms="2222">
     <groups>
     </groups>
-    <test started-at="2025-11-10T11:43:36 IST" name="Login Test" finished-at="2025-11-10T11:43:39 IST" duration-ms="2828">
+    <test started-at="2025-11-11T11:47:35 IST" name="Login Test" finished-at="2025-11-11T11:47:38 IST" duration-ms="2222">
       <class name="com.prathmesh.selenium.tests.LoginTest">
-        <test-method is-config="true" signature="setupReports()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@5340477f]" started-at="2025-11-10T11:43:36 IST" name="setupReports" finished-at="2025-11-10T11:43:36 IST" duration-ms="70" status="PASS">
+        <test-method is-config="true" signature="setupReports()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@387a8303]" started-at="2025-11-11T11:47:35 IST" name="setupReports" finished-at="2025-11-11T11:47:35 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReports -->
-        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@5340477f]" started-at="2025-11-10T11:43:36 IST" name="setup" finished-at="2025-11-10T11:43:39 IST" duration-ms="2543" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@387a8303]" started-at="2025-11-11T11:47:35 IST" name="setup" finished-at="2025-11-11T11:47:37 IST" duration-ms="1930" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="startLogging(java.lang.reflect.Method)[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@387a8303]" started-at="2025-11-11T11:47:37 IST" name="startLogging" finished-at="2025-11-11T11:47:37 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,23 +25,27 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="Loginintoapplication()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@5340477f]" started-at="2025-11-10T11:43:39 IST" name="Loginintoapplication" finished-at="2025-11-10T11:43:39 IST" duration-ms="178" status="PASS">
+        </test-method> <!-- startLogging -->
+        <test-method signature="Loginintoapplication()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@387a8303]" started-at="2025-11-11T11:47:37 IST" name="Loginintoapplication" finished-at="2025-11-11T11:47:38 IST" duration-ms="172" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loginintoapplication -->
-        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@5340477f]" started-at="2025-11-10T11:43:39 IST" name="teardown" finished-at="2025-11-10T11:43:39 IST" duration-ms="98" status="PASS">
+        <test-method is-config="true" signature="logResults(org.testng.ITestResult)[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@387a8303]" started-at="2025-11-11T11:47:38 IST" name="logResults" finished-at="2025-11-11T11:47:38 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Loginintoapplication status=SUCCESS method=LoginTest.Loginintoapplication()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@5340477f] output={null}]]]>
+                <![CDATA[[TestResult name=Loginintoapplication status=SUCCESS method=LoginTest.Loginintoapplication()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@387a8303] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- logResults -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@387a8303]" started-at="2025-11-11T11:47:38 IST" name="teardown" finished-at="2025-11-11T11:47:38 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@5340477f]" started-at="2025-11-10T11:43:39 IST" name="tearDownReport" finished-at="2025-11-10T11:43:39 IST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.prathmesh.selenium.tests.LoginTest@387a8303]" started-at="2025-11-11T11:47:38 IST" name="tearDownReport" finished-at="2025-11-11T11:47:38 IST" duration-ms="116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
